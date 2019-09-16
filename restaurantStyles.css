@@ -1,0 +1,17 @@
+body {
+    background-color: gainsboro;
+    color: azure;
+
+}
+h1 {
+    color: #6695DA;
+}
+a {
+	color:black
+}
+#intro {
+    font-size: 1.3em;
+}
+.colorful {
+    color: orange;
+}
