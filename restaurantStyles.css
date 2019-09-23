@@ -1,0 +1,26 @@
+body {
+    background-color: gainsboro;
+    color: azure;
+
+}
+h1 {
+    color: #6695DA;
+}
+h2{
+  color: black
+}
+a {
+	color:black
+}
+b{
+  font-style: oblique;
+  color:#6695DA;
+
+}
+p {
+  color: black
+}
+i {
+  font-style: oblique;
+  color:black;
+}
