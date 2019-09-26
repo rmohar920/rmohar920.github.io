@@ -6,12 +6,21 @@ body {
 h1 {
     color: #6695DA;
 }
+h2{
+  color: black
+}
 a {
 	color:black
 }
-#intro {
-    font-size: 1.3em;
+b{
+  font-style: oblique;
+  color:#6695DA;
+
 }
-.colorful {
-    color: orange;
+p {
+  color: black
+}
+i {
+  font-style: oblique;
+  color:black;
 }
