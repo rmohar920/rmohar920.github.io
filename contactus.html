@@ -23,19 +23,114 @@
         label{
           color:black
         }
+        .jumbotron{
+          margin-top: 100px;
+          background-image: url(https://media1.giphy.com/media/NVn5Tg8yDOrDmPNtGJ/giphy.gif?cid=790b7611411d517095fcd843fe8ab41af65ecf8695e3c9ff&rid=giphy.gif);
+          background-size: 33%
+        }
         </style>
     </head>
     <body>
+      <div class="jumbotron">
+      <div class="container">
+      <h1 style="color:white;text-align:center;">Monk's Cafe</h1>
+      <h1 style="color:white;text-align:center;">New Location!!!!</h1>
+      </div>
+      </div>
+
+
       <h1 align=center>  Monk's Cafe  </h1>
         <hr />
         <!-- We need to add links to projects.html, contact.html, and testimonials.html -->
-       <a href="index.html">Home</a>
-        <a href="menu.html">Menu</a>
-        <a href="contactus.html">Contact Us</a>
+        <nav class="nav nav-pills nav-justified">
+      <a class="nav-item nav-link active" href="homepagejs.html">Home</a>
+      <a class="nav-item nav-link" href="menu.html">Menu</a>
+      <a class="nav-item nav-link" href="contactus.html">Contact Us</a>
+
+    </nav>
 
         <hr />
+        <div class="container">
 
-<form action="/action_page.php">
+
+          <form action="/action_page.php" class="needs-validation" novalidate>
+            <div class="form-group">
+              <label for="uname">Name:</label>
+              <input type="text" class="form-control" id="uname" placeholder="Enter Name" name="uname" required>
+              <div class="valid-feedback">Valid.</div>
+              <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+            <div class="form-group">
+              <label for="pwd">Email:</label>
+              <input type="text" class="form-control" id="pwd" placeholder="Enter Email" name="pswd" required>
+              <div class="valid-feedback">Valid.</div>
+              <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+            <div class="form-group">
+              <label for="pwd">Phone Number:</label>
+              <input type="number" class="form-control" id="pwd" placeholder="Enter Phone #" name="pswd" required>
+              <div class="valid-feedback">Valid.</div>
+              <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+            <fieldset class="form-group">
+            <div class="row">
+            <legend class="col-form-label col-3">Reason for feedback</legend>
+            <div class="col-9">
+            <div class="form-check">
+            <label class="form-check-label">
+            <input class="form-check-input" type="radio" name="legendRadio" id="legendRadio1" value="1">
+            Complains
+            </label>
+            </div>
+            <div class="form-check">
+            <label class="form-check-label">
+            <input class="form-check-input" type="radio" name="legendRadio" id="legendRadio2" value="2" checked>
+            Catering
+            </label>
+            </div>
+            <div class="form-check">
+            <label class="form-check-label">
+            <input class="form-check-input" type="radio" name="legendRadio" id="legendRadio3" value="3">
+            other
+            <p>In a few words please let us know how we can help you </p>
+
+            <form action="/action_page.php">
+              <textarea name="message" rows="10" cols="30"></textarea>
+              <br>
+            <div class="form-group form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" name="remember" required> I agree.
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Check this checkbox to continue.</div>
+              </label>
+
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+
+        <script>
+        // Disable form submissions if there are invalid fields
+        (function() {
+          'use strict';
+          window.addEventListener('load', function() {
+            // Get the forms we want to add validation styles to
+            var forms = document.getElementsByClassName('needs-validation');
+            // Loop over them and prevent submission
+            var validation = Array.prototype.filter.call(forms, function(form) {
+              form.addEventListener('submit', function(event) {
+                if (form.checkValidity() === false) {
+                  event.preventDefault();
+                  event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+              }, false);
+            });
+          }, false);
+        })();
+        </script>
+<hr />
+<!-- <form action="/action_page.php">
 Name: <input type="text" name="name" value=""><br>
 Email: <input type="text" name="email" value=""><br>
 Phone: <input type="text" name="phone" value=""><br>
@@ -73,7 +168,7 @@ Phone: <input type="text" name="phone" value=""><br>
   <br>
   <input type="submit">
 </form>
-<hr />
+<hr /> -->
 
 <footer>
 <!--The footer element normally appears at the bottom of the body element, often with links to other pages in the website and legal information about using the page.-->

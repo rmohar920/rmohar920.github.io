@@ -1,0 +1,25 @@
+
+h1 {
+  font-size: 70px;
+}
+h2   {color: #6695DA;{
+
+}
+.btn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: RoyalBlue;
+}
+.jumbotron {
+  margin-top: 20px;
+  background-image: url(https://hdqwalls.com/download/adventure-time-ty-1366x768.jpg);
+  background-size: 33%
+}
